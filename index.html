@@ -1,387 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Zaan | Karachi</title>
-  <meta name="description" content="Special Zaan, a restaurant in Karachi serving karahi, biryani, kebabs, cold drinks and more.">
-  <link rel="stylesheet" href="styles.css?v=4">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaiqedar Zaan | Restaurant in Karachi</title>
+<meta name="description" content="Zaiqedar Zaan serves fresh Pakistani food, burgers, pizza, pasta and desserts in Karachi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Mulish:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="chat-widget.css?v=gold2">
 </head>
 <body>
 
-  <!-- 1. HEADER -->
-  <header class="site-header">
-    <div class="brand">
-      <svg class="brand-chef" viewBox="0 0 120 120" aria-hidden="true">
+<!-- Dish illustrations (3D-style, reusable). Replace with real photos any time. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<radialGradient id="hl" cx=".3" cy=".25" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<g id="pl"><ellipse cx="60" cy="76" rx="52" ry="11" fill="#000" opacity=".28"/><ellipse cx="60" cy="68" rx="52" ry="15" fill="#cfc4ad"/><ellipse cx="60" cy="65" rx="52" ry="15" fill="#f4eee0"/><ellipse cx="60" cy="64" rx="38" ry="10" fill="#e5dcc7"/></g>
+
+<g id="sp"><use href="#pl"/>
+<g fill="#cf8a2c" stroke="#8e5a14" stroke-width="1.5"><rect x="22" y="48" width="48" height="15" rx="7.5" transform="rotate(-12 46 55)"/><rect x="30" y="38" width="48" height="15" rx="7.5" transform="rotate(6 54 45)"/><rect x="40" y="50" width="48" height="15" rx="7.5" transform="rotate(-4 64 57)"/></g>
+<g stroke="#f2c36d" stroke-width="2.5" stroke-linecap="round"><path d="M30 46l36-5M40 36l34 3M48 49l36-2"/></g>
+<ellipse cx="96" cy="60" rx="13" ry="5" fill="#9d1f18"/><ellipse cx="94" cy="58.5" rx="7" ry="2" fill="url(#hl)"/></g>
+
+<g id="bg"><ellipse cx="60" cy="78" rx="46" ry="8" fill="#000" opacity=".28"/>
+<rect x="26" y="62" width="68" height="12" rx="6" fill="#b87427"/>
+<rect x="24" y="52" width="72" height="12" rx="6" fill="#5a3420"/>
+<path d="M28 52h64l-10 10z" fill="#f2c230"/>
+<path d="M22 50q8 9 16 0t16 0 16 0 16 0 8 3v3H22z" fill="#79b04a"/>
+<path d="M26 46c0-30 68-30 68 0z" fill="#d8923f"/>
+<ellipse cx="50" cy="28" rx="26" ry="9" fill="url(#hl)"/>
+<g fill="#f6e3b4"><ellipse cx="46" cy="30" rx="3" ry="1.6"/><ellipse cx="62" cy="26" rx="3" ry="1.6"/><ellipse cx="74" cy="34" rx="3" ry="1.6"/><ellipse cx="56" cy="38" rx="3" ry="1.6"/></g></g>
+
+<g id="pz"><ellipse cx="60" cy="62" rx="50" ry="24" fill="#a8742d"/><ellipse cx="60" cy="56" rx="50" ry="24" fill="#dba44f"/><ellipse cx="60" cy="56" rx="42" ry="19" fill="#f0c14f"/>
+<g fill="#b8321f"><ellipse cx="42" cy="52" rx="8" ry="4"/><ellipse cx="68" cy="48" rx="8" ry="4"/><ellipse cx="80" cy="60" rx="8" ry="4"/><ellipse cx="54" cy="64" rx="8" ry="4"/><ellipse cx="30" cy="62" rx="6" ry="3"/></g>
+<g fill="#4f9a3a"><ellipse cx="58" cy="54" rx="4" ry="2"/><ellipse cx="74" cy="54" rx="3" ry="1.5"/></g>
+<path d="M60 56L98 48M60 56L84 76" stroke="#a8742d" stroke-width="1.5"/><ellipse cx="46" cy="42" rx="26" ry="8" fill="url(#hl)"/></g>
+
+<g id="kh"><ellipse cx="60" cy="80" rx="44" ry="7" fill="#000" opacity=".28"/>
+<rect x="8" y="38" width="12" height="6" rx="3" fill="#c8a04a"/><rect x="100" y="38" width="12" height="6" rx="3" fill="#c8a04a"/>
+<path d="M16 40h88c0 28-20 38-44 38S16 68 16 40z" fill="#2b2622"/>
+<ellipse cx="60" cy="40" rx="44" ry="11" fill="#5a5048"/><ellipse cx="60" cy="41" rx="39" ry="8.5" fill="#c2410c"/>
+<g fill="#e8a75d"><ellipse cx="44" cy="40" rx="7" ry="3.5"/><ellipse cx="62" cy="43" rx="7" ry="3.5"/><ellipse cx="78" cy="39" rx="6" ry="3"/></g>
+<g fill="#4f9a3a"><rect x="50" y="36" width="12" height="3" rx="1.5" transform="rotate(-18 56 37)"/><circle cx="72" cy="41" r="2.5"/><circle cx="36" cy="43" r="2"/></g>
+<path d="M30 56c14 6 46 6 60 0" stroke="#fff" stroke-opacity=".12" stroke-width="3" fill="none"/>
+<g fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"><path d="M46 28q-6-8 0-14"/><path d="M60 26q-6-8 0-14"/><path d="M74 28q-6-8 0-14"/></g></g>
+
+<g id="ps"><use href="#pl"/><ellipse cx="60" cy="56" rx="32" ry="13" fill="#d9b04a"/><ellipse cx="60" cy="52" rx="32" ry="13" fill="#f1d17a"/>
+<g fill="none" stroke="#d3a93c" stroke-width="2.5" stroke-linecap="round"><path d="M36 52c10-10 20 8 30-2s14 6 22 0"/><path d="M40 58c12-8 18 6 28-2s12 4 16-2"/><path d="M44 46c8-6 16 4 24-2s10 2 14-2"/></g>
+<ellipse cx="60" cy="46" rx="18" ry="7" fill="#c0392b"/><ellipse cx="55" cy="44" rx="8" ry="2.5" fill="url(#hl)"/>
+<path d="M58 44q8-10 16-4-4 8-16 4z" fill="#4f9a3a"/></g>
+
+<g id="dk"><ellipse cx="60" cy="80" rx="26" ry="6" fill="#000" opacity=".3"/>
+<path d="M34 16h52l-7 60H41z" fill="currentColor"/>
+<path d="M34 16h52l-1.5 12H35.5z" fill="#fff" opacity=".28"/>
+<g fill="#fff" opacity=".6"><rect x="44" y="34" width="12" height="12" rx="2" transform="rotate(14 50 40)"/><rect x="62" y="44" width="12" height="12" rx="2" transform="rotate(-12 68 50)"/><rect x="48" y="56" width="12" height="12" rx="2" transform="rotate(8 54 62)"/></g>
+<path d="M34 16h52l-7 60H41z" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+<ellipse cx="60" cy="16" rx="26" ry="5" fill="#fff" opacity=".35"/>
+<path d="M66 30L84 2" stroke="#b3261e" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="90" cy="22" r="12" fill="#f2d03b" stroke="#b7c43c" stroke-width="2.5"/><path d="M90 11v22M79 22h22M82 14l16 16M98 14L82 30" stroke="#fff3b0" stroke-width="1.2"/>
+<path d="M42 22l3 44" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/></g>
+
+<g id="ds"><ellipse cx="60" cy="80" rx="46" ry="7" fill="#000" opacity=".28"/>
+<path d="M24 46h72c0 18-15 30-36 30S24 64 24 46z" fill="#d8ccb2"/>
+<ellipse cx="60" cy="46" rx="36" ry="11" fill="#f4eee0"/><ellipse cx="60" cy="47" rx="31" ry="8.5" fill="#d99a2b"/>
+<g fill="currentColor"><circle cx="44" cy="40" r="12"/><circle cx="70" cy="40" r="12"/><circle cx="57" cy="29" r="12"/></g>
+<g fill="url(#hl)"><circle cx="40" cy="35" r="8"/><circle cx="66" cy="35" r="8"/><circle cx="53" cy="24" r="8"/></g>
+<g fill="#6fae3f"><rect x="55" y="42" width="5" height="2.5" rx="1"/><rect x="76" y="46" width="5" height="2.5" rx="1"/><rect x="36" y="46" width="5" height="2.5" rx="1"/></g></g>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" id="top">
+      <svg class="chef" viewBox="0 -6 100 116" role="img" aria-label="Chef wearing a tall white hat">
         <defs>
-          <radialGradient id="hatG" cx="40%" cy="30%" r="70%">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="100%" stop-color="#d9d4c7"/>
-          </radialGradient>
-          <linearGradient id="faceG" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#e9b98e"/>
-            <stop offset="100%" stop-color="#b9825a"/>
-          </linearGradient>
+          <radialGradient id="ch" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#c9c0ae"/></radialGradient>
+          <radialGradient id="cs" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#f8cfa6"/><stop offset="1" stop-color="#c5865a"/></radialGradient>
+          <linearGradient id="cc" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#cfc6b4"/></linearGradient>
         </defs>
-        <ellipse cx="60" cy="112" rx="36" ry="6" fill="#000" opacity=".35"/>
-        <rect x="34" y="70" width="52" height="40" rx="8" fill="#faf6ee"/>
-        <rect x="34" y="70" width="52" height="8" rx="4" fill="#e8e1d2"/>
-        <rect x="46" y="80" width="28" height="4" rx="2" fill="#c9a54b"/>
-        <circle cx="60" cy="52" r="22" fill="url(#faceG)"/>
-        <circle cx="52" cy="50" r="2.4" fill="#2b2b2e"/>
-        <circle cx="68" cy="50" r="2.4" fill="#2b2b2e"/>
-        <path d="M53 62 Q60 67 67 62" stroke="#7a4a2c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <path d="M40 46 Q60 36 80 46" stroke="#2b2b2e" stroke-width="3" fill="none" opacity=".35"/>
-        <rect x="38" y="20" width="44" height="22" rx="10" fill="url(#hatG)"/>
-        <circle cx="48" cy="26" r="11" fill="url(#hatG)"/>
-        <circle cx="72" cy="26" r="11" fill="url(#hatG)"/>
-        <circle cx="60" cy="20" r="13" fill="url(#hatG)"/>
-        <rect x="38" y="36" width="44" height="6" rx="2" fill="#c9a54b"/>
+        <ellipse cx="50" cy="106" rx="32" ry="4" fill="#000" opacity=".4"/>
+        <path d="M16 108c0-22 15-31 34-31s34 9 34 31z" fill="url(#cc)"/>
+        <path d="M36 80l14 18 14-18" fill="none" stroke="#c8a04a" stroke-width="5" stroke-linejoin="round"/>
+        <circle cx="50" cy="102" r="2" fill="#c8a04a"/><circle cx="50" cy="94" r="2" fill="#c8a04a" opacity="0"/>
+        <rect x="42" y="68" width="16" height="14" fill="url(#cs)"/>
+        <circle cx="27" cy="54" r="5" fill="url(#cs)"/><circle cx="73" cy="54" r="5" fill="url(#cs)"/>
+        <ellipse cx="50" cy="52" rx="24" ry="26" fill="url(#cs)"/>
+        <circle cx="39" cy="60" r="5" fill="#e0707a" opacity=".3"/><circle cx="61" cy="60" r="5" fill="#e0707a" opacity=".3"/>
+        <circle cx="41" cy="50" r="3" fill="#2a1a10"/><circle cx="59" cy="50" r="3" fill="#2a1a10"/>
+        <circle cx="42" cy="49" r="1" fill="#fff"/><circle cx="60" cy="49" r="1" fill="#fff"/>
+        <path d="M35 61c6-5 11-3 15 0 4-3 9-5 15 0-4 7-10 5-15 2-5 3-11 5-15-2z" fill="#3a2418"/>
+        <path d="M43 69q7 5 14 0" fill="none" stroke="#7a3b2a" stroke-width="2" stroke-linecap="round"/>
+        <rect x="29" y="22" width="42" height="14" rx="3" fill="url(#ch)"/>
+        <circle cx="34" cy="16" r="12" fill="url(#ch)"/><circle cx="66" cy="16" r="12" fill="url(#ch)"/><circle cx="50" cy="8" r="14" fill="url(#ch)"/>
+        <rect x="29" y="31" width="42" height="5" rx="2" fill="#bdb39f"/>
       </svg>
-      <div class="brand-text">
-        <span class="brand-name">Special Zaan</span>
-        <span class="brand-tag">Karachi</span>
-      </div>
-    </div>
-    <nav class="site-nav" aria-label="Main">
+      <span class="name">Zaiqedar Zaan</span>
+    </a>
+    <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
+      <a href="#visit">Visit us</a>
     </nav>
-  </header>
-
-  <main>
-
-    <!-- 2. HERO -->
-    <section class="hero" id="top">
-      <svg class="hero-bg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#2a2a2e"/>
-            <stop offset="100%" stop-color="#16161a"/>
-          </linearGradient>
-          <linearGradient id="floorG" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#3a2f22"/>
-            <stop offset="100%" stop-color="#1c1712"/>
-          </linearGradient>
-          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#f3c96b" stop-opacity=".9"/>
-            <stop offset="100%" stop-color="#f3c96b" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="1600" height="900" fill="url(#wallG)"/>
-        <polygon points="0,0 1600,0 1200,260 400,260" fill="#1b1b1f"/>
-        <rect x="380" y="260" width="840" height="30" fill="#4a3a22"/>
-        <polygon points="0,900 1600,900 1200,640 400,640" fill="url(#floorG)"/>
-        <rect x="120" y="150" width="210" height="260" rx="6" fill="#121215" stroke="#c9a54b" stroke-width="4"/>
-        <rect x="1270" y="150" width="210" height="260" rx="6" fill="#121215" stroke="#c9a54b" stroke-width="4"/>
-        <circle cx="800" cy="120" r="260" fill="url(#glow)"/>
-        <circle cx="330" cy="90" r="90" fill="url(#glow)"/>
-        <circle cx="1270" cy="90" r="90" fill="url(#glow)"/>
-        <line x1="800" y1="0" x2="800" y2="110" stroke="#c9a54b" stroke-width="3"/>
-        <ellipse cx="800" cy="128" rx="46" ry="18" fill="#f3c96b"/>
-        <line x1="330" y1="0" x2="330" y2="60" stroke="#c9a54b" stroke-width="3"/>
-        <ellipse cx="330" cy="76" rx="26" ry="10" fill="#f3c96b"/>
-        <line x1="1270" y1="0" x2="1270" y2="60" stroke="#c9a54b" stroke-width="3"/>
-        <ellipse cx="1270" cy="76" rx="26" ry="10" fill="#f3c96b"/>
-        <g fill="#2b2620" stroke="#c9a54b" stroke-width="2">
-          <ellipse cx="300" cy="720" rx="130" ry="36"/>
-          <ellipse cx="1300" cy="720" rx="130" ry="36"/>
-          <ellipse cx="800" cy="800" rx="170" ry="44"/>
-        </g>
-        <g fill="#c9a54b" opacity=".7">
-          <rect x="250" y="700" width="20" height="60"/>
-          <rect x="1250" y="700" width="20" height="60"/>
-          <rect x="770" y="780" width="60" height="110"/>
-        </g>
-        <g fill="#faf6ee" opacity=".12">
-          <ellipse cx="800" cy="290" rx="180" ry="10"/>
-          <ellipse cx="500" cy="300" rx="60" ry="5"/>
-          <ellipse cx="1100" cy="300" rx="60" ry="5"/>
-        </g>
-      </svg>
-      <div class="hero-content">
-        <p class="eyebrow">Authentic flavours of Karachi</p>
-        <h1>Where Every Meal Feels Like a Celebration</h1>
-        <p class="hero-lead">Slow-cooked karahi, aromatic biryani and smoky kebabs, served with warmth in the heart of Karachi.</p>
-        <a class="cta" href="#menu">View Our Menu</a>
-      </div>
-    </section>
-
-    <!-- 3. ABOUT -->
-    <section class="about" id="about">
-      <div class="section-head">
-        <p class="eyebrow">Our Story</p>
-        <h2>Crafted with Care, Served with Pride</h2>
-      </div>
-      <div class="about-grid">
-        <article class="about-card">
-          <div class="about-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#c9a54b" stroke-width="2.5"/><path d="M24 12 C 18 20, 30 24, 24 36" stroke="#c9a54b" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Family Recipes</h3>
-          <p>Our dishes follow recipes passed down through generations, prepared fresh every day.</p>
-        </article>
-        <article class="about-card">
-          <div class="about-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><path d="M10 30 h28 a14 14 0 0 1 -28 0z" fill="none" stroke="#c9a54b" stroke-width="2.5"/><path d="M16 14 q4 -6 0 -10 M24 14 q4 -6 0 -10 M32 14 q4 -6 0 -10" stroke="#c9a54b" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Slow-Cooked Flavour</h3>
-          <p>Spices are balanced by hand and meats are cooked slowly until tender, for deep and honest taste.</p>
-        </article>
-        <article class="about-card">
-          <div class="about-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><path d="M24 6 l5 11 12 1.5 -9 8 2.5 12 -10.5 -6 -10.5 6 2.5 -12 -9 -8 12 -1.5z" fill="none" stroke="#c9a54b" stroke-width="2.5" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Warm Hospitality</h3>
-          <p>Whether you join us for a quick lunch or a family dinner, you are treated like a guest of the house.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- 4. MENU -->
-    <section class="menu" id="menu">
-      <div class="section-head">
-        <p class="eyebrow">Our Menu</p>
-        <h2>Signature Dishes</h2>
-        <p class="section-sub">Prices are placeholders and will be updated.</p>
-      </div>
-
-      <h3 class="menu-category">Main Dishes</h3>
-      <div class="menu-grid">
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><radialGradient id="k1" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#f08a3e"/><stop offset="100%" stop-color="#8a3d12"/></radialGradient></defs>
-              <ellipse cx="100" cy="128" rx="88" ry="14" fill="#000" opacity=".3"/>
-              <ellipse cx="100" cy="100" rx="82" ry="30" fill="#f5f0e6"/>
-              <ellipse cx="100" cy="94" rx="70" ry="24" fill="url(#k1)"/>
-              <circle cx="70" cy="90" r="10" fill="#c4521f"/><circle cx="110" cy="96" r="9" fill="#d96a2b"/><circle cx="130" cy="86" r="8" fill="#2f7d32"/>
-              <circle cx="88" cy="100" r="7" fill="#e0a13a"/><circle cx="58" cy="100" r="6" fill="#2f7d32"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Chicken Karahi</h4>
-            <p>Tomatoes, ginger and green chillies, slow-cooked in a traditional wok.</p>
-            <div class="dish-foot"><span class="price">PKR 1,450</span><span class="tag">Bestseller</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><radialGradient id="b1" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#f7e3a1"/><stop offset="100%" stop-color="#b8862b"/></radialGradient></defs>
-              <ellipse cx="100" cy="128" rx="88" ry="14" fill="#000" opacity=".3"/>
-              <ellipse cx="100" cy="100" rx="82" ry="30" fill="#f5f0e6"/>
-              <ellipse cx="100" cy="92" rx="70" ry="24" fill="url(#b1)"/>
-              <circle cx="82" cy="88" r="6" fill="#8a2d2d"/><circle cx="112" cy="94" r="6" fill="#b5651d"/><circle cx="128" cy="84" r="5" fill="#2f7d32"/>
-              <circle cx="66" cy="96" r="5" fill="#e8c26a"/><circle cx="96" cy="78" r="5" fill="#2f7d32"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Mutton Biryani</h4>
-            <p>Long-grain basmati layered with tender mutton, saffron and fried onions.</p>
-            <div class="dish-foot"><span class="price">PKR 1,650</span><span class="tag">Signature</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><radialGradient id="t1" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#ff8a5c"/><stop offset="100%" stop-color="#b23a1a"/></radialGradient></defs>
-              <ellipse cx="100" cy="128" rx="88" ry="14" fill="#000" opacity=".3"/>
-              <ellipse cx="100" cy="104" rx="84" ry="26" fill="#f5f0e6"/>
-              <ellipse cx="72" cy="92" rx="26" ry="18" fill="url(#t1)"/>
-              <ellipse cx="112" cy="90" rx="26" ry="18" fill="url(#t1)"/>
-              <ellipse cx="146" cy="100" rx="18" ry="13" fill="url(#t1)"/>
-              <circle cx="60" cy="90" r="3" fill="#fff3d6" opacity=".7"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Chicken Tikka</h4>
-            <p>Yogurt and spice marinated chicken, charcoal grilled with onion and lemon.</p>
-            <div class="dish-foot"><span class="price">PKR 950</span><span class="tag">Grill</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8a5a3c"/><stop offset="100%" stop-color="#3b2216"/></linearGradient></defs>
-              <ellipse cx="100" cy="128" rx="88" ry="14" fill="#000" opacity=".3"/>
-              <rect x="30" y="86" width="140" height="10" rx="5" fill="#c9a54b"/>
-              <rect x="44" y="72" width="26" height="46" rx="12" fill="url(#s1)" transform="rotate(-8 57 95)"/>
-              <rect x="86" y="70" width="26" height="46" rx="12" fill="url(#s1)"/>
-              <rect x="128" y="72" width="26" height="46" rx="12" fill="url(#s1)" transform="rotate(8 141 95)"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Seekh Kebab</h4>
-            <p>Hand-minced beef with herbs and spices, grilled on skewers over open flame.</p>
-            <div class="dish-foot"><span class="price">PKR 800</span><span class="tag">Grill</span></div>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="menu-category">Cold Drinks</h3>
-      <div class="menu-grid">
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d9f7c4"/><stop offset="100%" stop-color="#6fb35a"/></linearGradient></defs>
-              <ellipse cx="100" cy="134" rx="50" ry="8" fill="#000" opacity=".3"/>
-              <path d="M70 40 h60 l-8 98 h-44z" fill="url(#g1)" opacity=".92"/>
-              <rect x="66" y="34" width="68" height="10" rx="4" fill="#faf6ee"/>
-              <path d="M76 60 h48 l-4 6 h-40z" fill="#faf6ee" opacity=".5"/>
-              <line x1="120" y1="20" x2="110" y2="36" stroke="#c9a54b" stroke-width="4" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Mint Lemonade</h4>
-            <p>Fresh lemon, mint leaves and a touch of black salt over crushed ice.</p>
-            <div class="dish-foot"><span class="price">PKR 350</span><span class="tag">Refreshing</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff9ab0"/><stop offset="100%" stop-color="#c2185b"/></linearGradient></defs>
-              <ellipse cx="100" cy="134" rx="50" ry="8" fill="#000" opacity=".3"/>
-              <path d="M70 40 h60 l-8 98 h-44z" fill="url(#g2)" opacity=".92"/>
-              <rect x="66" y="34" width="68" height="10" rx="4" fill="#faf6ee"/>
-              <line x1="120" y1="20" x2="110" y2="36" stroke="#c9a54b" stroke-width="4" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Rooh Afza Chill</h4>
-            <p>Classic rose-flavoured syrup blended with chilled milk and crushed ice.</p>
-            <div class="dish-foot"><span class="price">PKR 400</span><span class="tag">Classic</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffd966"/><stop offset="100%" stop-color="#e08a00"/></linearGradient></defs>
-              <ellipse cx="100" cy="134" rx="50" ry="8" fill="#000" opacity=".3"/>
-              <path d="M70 40 h60 l-8 98 h-44z" fill="url(#g3)" opacity=".92"/>
-              <rect x="66" y="34" width="68" height="10" rx="4" fill="#faf6ee"/>
-              <circle cx="100" cy="90" r="10" fill="#fff3d6" opacity=".5"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Mango Lassi</h4>
-            <p>Thick Sindhi-style yogurt blended with ripe mango and a hint of cardamom.</p>
-            <div class="dish-foot"><span class="price">PKR 450</span><span class="tag">Sweet</span></div>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="menu-category">Additions</h3>
-      <div class="menu-grid">
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <ellipse cx="100" cy="128" rx="60" ry="10" fill="#000" opacity=".3"/>
-              <ellipse cx="100" cy="106" rx="60" ry="20" fill="#f5f0e6"/>
-              <ellipse cx="100" cy="100" rx="50" ry="14" fill="#f3f7f0"/>
-              <circle cx="84" cy="98" r="6" fill="#ff7a59"/><circle cx="104" cy="104" r="5" fill="#f2b632"/>
-              <circle cx="118" cy="96" r="6" fill="#2f7d32"/><circle cx="92" cy="106" r="5" fill="#ffffff"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Cucumber Raita</h4>
-            <p>Chilled yogurt with cucumber, mint and roasted cumin.</p>
-            <div class="dish-foot"><span class="price">PKR 250</span><span class="tag">Side</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <ellipse cx="100" cy="128" rx="60" ry="10" fill="#000" opacity=".3"/>
-              <path d="M40 90 q60 -50 120 0 q-60 28 -120 0z" fill="#d9a35a"/>
-              <path d="M60 92 q40 -18 80 0" stroke="#8a5a20" stroke-width="2" fill="none" opacity=".5"/>
-              <circle cx="100" cy="88" r="4" fill="#2b1a0e" opacity=".4"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Garlic Naan</h4>
-            <p>Tandoor-baked naan brushed with garlic butter and coriander.</p>
-            <div class="dish-foot"><span class="price">PKR 200</span><span class="tag">Bread</span></div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="dish-img" aria-hidden="true">
-            <svg viewBox="0 0 200 150">
-              <ellipse cx="100" cy="128" rx="60" ry="10" fill="#000" opacity=".3"/>
-              <ellipse cx="100" cy="112" rx="56" ry="16" fill="#f5f0e6"/>
-              <circle cx="78" cy="106" r="10" fill="#b1282a"/><circle cx="104" cy="100" r="9" fill="#e0a13a"/>
-              <circle cx="122" cy="110" r="8" fill="#2f7d32"/><circle cx="92" cy="114" r="7" fill="#ff7a59"/>
-            </svg>
-          </div>
-          <div class="dish-body">
-            <h4>Kachumber Salad</h4>
-            <p>Fresh tomato, onion, cucumber and lemon with a pinch of chaat masala.</p>
-            <div class="dish-foot"><span class="price">PKR 300</span><span class="tag">Fresh</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 5. CONTACT / CTA -->
-    <section class="contact" id="contact">
-      <div class="contact-box">
-        <p class="eyebrow">Visit or Order</p>
-        <h2>We Would Love to Hear from You</h2>
-        <ul class="contact-list">
-          <li><span class="label">Phone</span><a href="tel:03218271287">03218271287</a></li>
-          <li><span class="label">Location</span><a href="https://www.google.com/maps/place/Sector+44+Gulzar+E+Hijri+Scheme+33,+Karachi,+Pakistan/@24.9500867,67.1624559,3539m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3eb33811ebe5" target="_blank" rel="noopener noreferrer">Sector 44 Gulzar E Hijri Scheme 33, Karachi, Pakistan</a></li>
-          <li><span class="label">Hours</span><span>Daily, 12:00 PM to 11:00 PM (placeholder)</span></li>
-        </ul>
-        <a class="cta" href="tel:03218271287">Call to Reserve</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- 6. FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-brand">Special Zaan</div>
-    <p>Karachi's home of karahi, biryani and kebabs.</p>
-    <p class="copyright">&copy; 2026 Special Zaan. All rights reserved.</p>
-  </footer>
-
-  <!-- CHAT WIDGET: Special Zaan Assistant (mock, no API connected) -->
-  <div class="chat-widget">
-    <section class="chat-window" id="chat-window" aria-label="Special Zaan Assistant chat" aria-hidden="true">
-      <header class="chat-header">
-        <div class="chat-title">
-          <span class="chat-avatar" aria-hidden="true">SZ</span>
-          <div>
-            <strong>Special Zaan Assistant</strong>
-            <span class="chat-status">Online</span>
-          </div>
-        </div>
-        <button type="button" class="chat-close" aria-label="Close chat">&times;</button>
-      </header>
-      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite"></div>
-      <form class="chat-form" id="chat-form">
-        <label class="sr-only" for="chat-input">Type your message</label>
-        <input type="text" id="chat-input" name="message" placeholder="Type your message..." autocomplete="off" maxlength="500">
-        <button type="submit" class="chat-send">Send</button>
-      </form>
-    </section>
-    <button type="button" class="chat-toggle" id="chat-toggle" aria-expanded="false" aria-controls="chat-window" aria-label="Open Special Zaan Assistant chat">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="currentColor"/></svg>
-    </button>
   </div>
+</header>
 
-  <script src="app.js?v=4" defer></script>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <h1 id="hero-title">Karachi's favourite dishes, cooked fresh every day.</h1>
+    <p>Come in for charcoal-warm karahi, juicy burgers, hot pizza and a sweet finish. There is always a table for you.</p>
+    <div class="actions">
+      <a class="btn" href="#menu">See the menu</a>
+      <a class="plain" href="#visit">Find us</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap two">
+    <div>
+      <h2>A Karachi kitchen with a warm table</h2>
+      <p>Zaiqedar Zaan brings the taste of Karachi's busiest food streets into one welcoming dining room. Our cooks start early, grind spices in-house and cook each order fresh, from slow-simmered Nihari to crisp Zinger burgers.</p>
+      <p>Families, friends and late-night crowds all find something to love here. Sit down, share a few plates and take your time.</p>
+    </div>
+    <ul class="points">
+      <li><strong>Cooked fresh to order</strong>Nothing waits under a lamp. Your food comes hot from the kitchen.</li>
+      <li><strong>Spices ground in-house</strong>Our karahi and Nihari get their flavour from whole spices.</li>
+      <li><strong>Room for everyone</strong>Large tables for families and a quiet corner for two.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <h2>Our menu</h2>
+    <p class="lead">All prices are in Pakistani rupees (Rs).</p>
+
+    <div class="grid">
+      <article class="card combo">
+        <div class="art"><svg viewBox="0 0 120 90"><use href="#bg"/></svg><svg viewBox="0 0 120 90" style="color:#e8503a"><use href="#dk"/></svg></div>
+        <div><h3>Special combo</h3><p>Zinger burger, fries and a drink of your choice.</p><span class="price">Rs 850</span></div>
+      </article>
+    </div>
+
+    <h3 class="cat">Starters</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Spring rolls"><use href="#sp"/></svg></div><h4>Crispy spring rolls</h4><p>Vegetable rolls fried golden, with chilli dip.</p><span class="price">Rs 390</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Samosas"><use href="#sp"/></svg></div><h4>Chicken samosa chaat</h4><p>Crushed samosas with yoghurt and tamarind.</p><span class="price">Rs 350</span></article>
+    </div>
+
+    <h3 class="cat">Burgers</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Zinger burger"><use href="#bg"/></svg></div><h4>Zinger burger</h4><p>Crunchy fried chicken, lettuce and house sauce.</p><span class="price">Rs 650</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Beef burger"><use href="#bg"/></svg></div><h4>Smash beef burger</h4><p>Two seared patties, melted cheese and pickles.</p><span class="price">Rs 790</span></article>
+    </div>
+
+    <h3 class="cat">Pizza</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Tikka pizza"><use href="#pz"/></svg></div><h4>Chicken tikka pizza</h4><p>Spiced tikka chicken, onion and green chilli.</p><span class="price">Rs 1,350</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Pepperoni pizza"><use href="#pz"/></svg></div><h4>Pepperoni pizza</h4><p>Beef pepperoni on a rich tomato and cheese base.</p><span class="price">Rs 1,450</span></article>
+    </div>
+
+    <h3 class="cat">Pakistani food</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Chicken karahi"><use href="#kh"/></svg></div><h4>Chicken karahi</h4><p>Cooked in a wok with tomato, ginger and green chilli.</p><span class="price">Rs 1,650</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Beef nihari"><use href="#kh"/></svg></div><h4>Beef nihari</h4><p>Slow-cooked overnight and served with fresh naan.</p><span class="price">Rs 1,100</span></article>
+    </div>
+
+    <h3 class="cat">Pasta</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Alfredo pasta"><use href="#ps"/></svg></div><h4>Creamy chicken alfredo</h4><p>Fettuccine in garlic cream sauce with grilled chicken.</p><span class="price">Rs 950</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" role="img" aria-label="Arrabbiata pasta"><use href="#ps"/></svg></div><h4>Spicy arrabbiata</h4><p>Penne in a hot tomato and chilli sauce.</p><span class="price">Rs 880</span></article>
+    </div>
+
+    <h3 class="cat">Drinks</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" style="color:#6fbf5a" role="img" aria-label="Mint margarita"><use href="#dk"/></svg></div><h4>Mint margarita</h4><p>Fresh mint, lemon and ice. Cold and sharp.</p><span class="price">Rs 380</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" style="color:#e0447a" role="img" aria-label="Rose sharbat"><use href="#dk"/></svg></div><h4>Rose sharbat</h4><p>Chilled rose syrup with milk and basil seeds.</p><span class="price">Rs 320</span></article>
+    </div>
+
+    <h3 class="cat">Desserts</h3>
+    <div class="grid">
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" style="color:#6b2d12" role="img" aria-label="Gulab jamun"><use href="#ds"/></svg></div><h4>Gulab jamun</h4><p>Three warm dumplings in cardamom syrup.</p><span class="price">Rs 350</span></article>
+      <article class="card"><div class="art"><svg viewBox="0 0 120 90" style="color:#f3e3b5" role="img" aria-label="Ras malai"><use href="#ds"/></svg></div><h4>Ras malai</h4><p>Soft milk dumplings in chilled saffron cream.</p><span class="price">Rs 420</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <h2>Visit us</h2>
+    <div class="panels">
+      <div class="panel">
+        <h3>Opening hours</h3>
+        <dl>
+          <div><dt>Monday to Thursday</dt><dd>12:00 pm to 11:30 pm</dd></div>
+          <div><dt>Friday to Sunday</dt><dd>12:00 pm to 1:00 am</dd></div>
+        </dl>
+      </div>
+      <div class="panel">
+        <h3>Location</h3>
+        <address>Zaiqedar Zaan<br>Khayaban-e-Shahbaz, DHA Phase 6<br>Karachi, Pakistan</address>
+        <a class="plain" href="https://www.google.com/maps/search/?api=1&amp;query=DHA+Phase+6+Karachi" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="panel">
+        <h3>Contact</h3>
+        <!-- Replace the phone and email below with your final details. -->
+        <p><a class="phone" href="tel:+923218271287">0321 8271287</a></p>
+        <p><a href="mailto:hello@zaiqedarzaan.pk">hello@zaiqedarzaan.pk</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <strong>Zaiqedar Zaan</strong>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#menu">Menu</a><a href="#visit">Visit us</a></nav>
+    <small>&copy; 2026 Zaiqedar Zaan, Karachi. All rights reserved.</small>
+  </div>
+</footer>
+<!-- Zaiqedar Zaan Assistant -->
+
+<div id="zz-chat-widget">
+  <section
+    class="zz-chat-window"
+    id="zz-chat-window"
+    aria-label="Zaiqedar Zaan Assistant chat"
+    aria-hidden="true"
+    inert
+  >
+    <header class="zz-chat-header">
+      <div class="zz-chat-title-wrap">
+        <div class="zz-chat-avatar" aria-hidden="true">ZZ</div>
+        <div>
+          <h2 class="zz-chat-title">Zaiqedar Zaan Assistant</h2>
+          <p class="zz-chat-status">Online</p>
+        </div>
+      </div>
+
+      <button class="zz-close" id="zz-close-chat" type="button" aria-label="Close chat">
+        ×
+      </button>
+    </header>
+
+    <div class="zz-messages" id="zz-messages" aria-live="polite">
+      <div class="zz-message zz-message--assistant">
+        <div class="zz-bubble">Hello! How can I help you today?</div>
+      </div>
+    </div>
+
+    <form class="zz-chat-form" id="zz-chat-form">
+      <input
+        class="zz-chat-input"
+        id="zz-chat-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Type your message..."
+        aria-label="Message"
+      />
+      <button class="zz-send" id="zz-send" type="submit">Send</button>
+    </form>
+  </section>
+
+  <button
+    class="zz-chat-toggle"
+    id="zz-open-chat"
+    type="button"
+    aria-label="Open Zaiqedar Zaan Assistant chat"
+    aria-expanded="false"
+    aria-controls="zz-chat-window"
+  >
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M20 11.5a7.5 7.5 0 0 1-7.8 7.5 8.8 8.8 0 0 1-3.4-.7L4 20l1.6-4.1A7.1 7.1 0 0 1 4 11.5 7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 8 7.5Z"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"
+        stroke="currentColor"
+        stroke-width="2.6"
+        stroke-linecap="round"
+      />
+    </svg>
+  </button>
+</div>
+
+<script>
+  (() => {
+    const openButton = document.getElementById("zz-open-chat");
+    const closeButton = document.getElementById("zz-close-chat");
+    const chatWindow = document.getElementById("zz-chat-window");
+    const form = document.getElementById("zz-chat-form");
+    const input = document.getElementById("zz-chat-input");
+    const sendButton = document.getElementById("zz-send");
+    const messages = document.getElementById("zz-messages");
+
+    // Google Apps Script web app /exec URL. Empty keeps the offline mock reply.
+    const AI_ENDPOINT = "";
+    const MAX_HISTORY = 10;
+    const FALLBACK_REPLY =
+      "Sorry, I could not connect just now. Please call us on 0321 8271287.";
+    const BUSY_REPLY =
+      "I am helping other guests right now. Please try again in a minute or call 0321 8271287.";
+
+    const history = [];
+    let waiting = false;
+    let typingBubble = null;
+
+    function scrollToLatestMessage() {
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function setChatOpen(isOpen) {
+      chatWindow.classList.toggle("is-open", isOpen);
+      chatWindow.setAttribute("aria-hidden", String(!isOpen));
+      chatWindow.inert = !isOpen;
+      openButton.setAttribute("aria-expanded", String(isOpen));
+
+      if (isOpen) {
+        setTimeout(() => input.focus(), 180);
+        scrollToLatestMessage();
+      } else {
+        openButton.focus();
+      }
+    }
+
+    function addMessage(text, sender) {
+      const message = document.createElement("div");
+      message.className = `zz-message zz-message--${sender}`;
+
+      const bubble = document.createElement("div");
+      bubble.className = "zz-bubble";
+      bubble.textContent = text;
+
+      message.appendChild(bubble);
+      messages.appendChild(message);
+
+      if (bubble.getBoundingClientRect().height > messages.clientHeight - 16) {
+        const offset =
+          message.getBoundingClientRect().top - messages.getBoundingClientRect().top;
+        messages.scrollTop += offset - 8;
+      } else {
+        scrollToLatestMessage();
+      }
+      return message;
+    }
+
+    function showTyping() {
+      typingBubble = document.createElement("div");
+      typingBubble.className = "zz-message zz-message--assistant";
+      typingBubble.innerHTML =
+        '<div class="zz-bubble zz-typing" role="status" aria-label="Assistant is typing"><span></span><span></span><span></span></div>';
+      messages.appendChild(typingBubble);
+      scrollToLatestMessage();
+    }
+
+    function hideTyping() {
+      if (typingBubble) {
+        typingBubble.remove();
+        typingBubble = null;
+      }
+    }
+
+    function setWaiting(value) {
+      waiting = value;
+      sendButton.disabled = value;
+      form.setAttribute("aria-busy", String(value));
+    }
+
+    function remember(role, text) {
+      history.push({ role, text });
+      if (history.length > MAX_HISTORY) history.shift();
+    }
+
+    const MENU_INTENT =
+      /menu|khana|khaana|food|dish|price|rate|kitne|kitna|burger|pizza|pasta|karahi|nihari|samosa|roll|sharbat|margarita|dessert|jamun|malai|alfredo|arrabbiata|combo/i;
+
+    const CATEGORY_INTENTS = [
+      { pattern: /combo/i, label: "Special combo" },
+      { pattern: /starter|samosa|spring roll/i, label: "Starters" },
+      { pattern: /burger/i, label: "Burgers" },
+      { pattern: /pizza/i, label: "Pizza" },
+      { pattern: /karahi|nihari|pakistani/i, label: "Pakistani food" },
+      { pattern: /pasta|alfredo|arrabbiata/i, label: "Pasta" },
+      { pattern: /drink|sharbat|margarita/i, label: "Drinks" },
+      { pattern: /dessert|jamun|malai/i, label: "Desserts" }
+    ];
+
+    function menuData() {
+      const groups = [];
+      const combo = document.querySelector(".menu .card.combo");
+      if (combo) {
+        const name = combo.querySelector("h3");
+        const description = combo.querySelector("p");
+        const price = combo.querySelector(".price");
+        if (name && price) {
+          groups.push({
+            category: "Special combo",
+            items: [
+              price.textContent.trim() +
+                (description ? " — " + description.textContent.trim() : "")
+            ]
+          });
+        }
+      }
+
+      document.querySelectorAll(".menu h3.cat").forEach((heading) => {
+        const grid = heading.nextElementSibling;
+        if (!grid) return;
+        const items = [...grid.querySelectorAll(".card")]
+          .map((card) => {
+            const name = card.querySelector("h4");
+            const price = card.querySelector(".price");
+            return name && price ? name.textContent.trim() + " — " + price.textContent.trim() : "";
+          })
+          .filter(Boolean);
+        if (items.length) {
+          groups.push({ category: heading.textContent.trim(), items: items });
+        }
+      });
+
+      return groups;
+    }
+
+    function buildMenuReply(query) {
+      if (!MENU_INTENT.test(query)) return "";
+
+      const groups = menuData();
+      if (!groups.length) return "";
+
+      const wanted = CATEGORY_INTENTS.filter((entry) => entry.pattern.test(query)).map((entry) => entry.label);
+      const lower = query.toLowerCase();
+
+      groups.forEach((group) => {
+        const mentionsDish = group.items.some((item) => {
+          const name = item.split(" — ")[0].toLowerCase();
+          return name.length > 3 && (lower.includes(name) || name.includes(lower));
+        });
+        if (mentionsDish && !wanted.includes(group.category)) {
+          wanted.push(group.category);
+        }
+      });
+
+      const rows = wanted.length
+        ? groups.filter((group) => wanted.includes(group.category))
+        : groups;
+      if (!rows.length) return "";
+
+      const body = rows
+        .map((group) =>
+          wanted.length
+            ? group.category + ":\n" + group.items.map((item) => "• " + item).join("\n")
+            : group.category + ": " + group.items.join("; ")
+        )
+        .join("\n\n");
+
+      return "Our menu (prices in Pakistani rupees):\n\n" + body + "\n\nFor orders, please call 0321 8271287.";
+    }
+
+    async function askAssistant() {
+      const controller = new AbortController();
+      const timer = window.setTimeout(() => controller.abort(), 30000);
+      try {
+        const response = await fetch(AI_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ messages: history }),
+          signal: controller.signal
+        });
+        if (!response.ok) {
+          throw new Error("http_" + response.status);
+        }
+        const data = await response.json();
+        if (data && typeof data.reply === "string" && data.reply.trim()) {
+          return data.reply.trim();
+        }
+        throw new Error((data && data.error) || "empty_reply");
+      } finally {
+        window.clearTimeout(timer);
+      }
+    }
+
+    openButton.addEventListener("click", () => {
+      setChatOpen(!chatWindow.classList.contains("is-open"));
+    });
+
+    closeButton.addEventListener("click", () => setChatOpen(false));
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (waiting) return;
+
+      const customerMessage = input.value.trim();
+      if (!customerMessage) return;
+
+      addMessage(customerMessage, "user");
+      remember("user", customerMessage);
+      input.value = "";
+      input.focus();
+      setWaiting(true);
+
+      if (!AI_ENDPOINT) {
+        showTyping();
+        window.setTimeout(() => {
+          const menuReply = buildMenuReply(customerMessage);
+          hideTyping();
+          if (menuReply) {
+            addMessage(menuReply, "assistant");
+            remember("model", menuReply);
+          } else {
+            addMessage(
+              "Hi! I'm Zaiqedar Zaan Assistant. The AI is not connected yet, but you can ask me for the menu. For orders, call 0321 8271287.",
+              "assistant"
+            );
+            history.pop();
+          }
+          setWaiting(false);
+          input.focus();
+        }, 450);
+        return;
+      }
+
+      showTyping();
+      let reply;
+      let rememberReply = true;
+      try {
+        reply = await askAssistant();
+      } catch (error) {
+        const menuReply = buildMenuReply(customerMessage);
+        if (menuReply) {
+          reply = menuReply;
+        } else {
+          reply = error && error.message === "busy" ? BUSY_REPLY : FALLBACK_REPLY;
+          history.pop();
+          rememberReply = false;
+        }
+      }
+
+      hideTyping();
+      addMessage(reply, "assistant");
+      if (rememberReply) {
+        remember("model", reply);
+      }
+      setWaiting(false);
+      input.focus();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && chatWindow.classList.contains("is-open")) {
+        setChatOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>
