@@ -1,0 +1,14 @@
+{
+  "name": "zaiqedar-zaan-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Zaiqedar Zaan website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+  },
+  "private": true
+}
